@@ -23,8 +23,11 @@ const NavBar = () => {
         <Menu/>
         {/* Right Links */}
         <div className='hidden md:flex gap-4 '></div>
-       {user ? <Link href="/login">Login</Link> 
-       :<Link href="/orders">Orders</Link>}
+        {!user ? (
+          <Link href="/login">Login</Link>
+        ) : (
+          <Link href="/orders">Orders</Link>
+        )}
 
       <Carticon/>
       </div>
