@@ -7,17 +7,17 @@ const Featured = () => {
       {/* Wrapper */}
      <div className='w-max flex'>
       {/* Single item */}
-      <div className='w-screen h-[60vh] flex flex-col items-center jusstify-around'>
+      <div className='w-screen h-[60vh] flex flex-col items-center jusstify-around p-4'>
     {/* Image container */}
     <div className="relative flex-1 w-full">
-    <Image src="/temporary/p1.png" alt='' fill />
+    <Image src="/temporary/p1.png" alt='' fill className='object-contain ' />
     </div>
     {/* text container */}
-    <div className='flex-1'>
-      <h1 className=''>title</h1>
+    <div className='flex-1 flex flex-col gap-4'>
+      <h1 className='text-xl font-bold uppercase '>title</h1>
       <p>Desc</p>
-      <span>123</span>
-      <button>Add to Cart</button>
+      <span className='text-xl font-bold'>$123</span>
+      <button className='bg-red-500 text-white p-2 rounded-md '>Add to Cart</button>
     </div>
       </div>
      </div>
